@@ -1,0 +1,47 @@
+.App {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Container {
+  position: relative;
+}
+
+.TypedString {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffd700; /* Pastel gold */
+  animation: typing 1s steps(40), blink-caret 0.5s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffd700; /* Pastel gold */
+  padding-right: 8px;
+}
+
+.EnterBox {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd700; /* Pastel gold */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffd700; /* Pastel gold */
+  }
+} 
